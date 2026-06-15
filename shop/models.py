@@ -2,18 +2,17 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.text import slugify
 from rest_framework import serializers
-# Сначала Master
 class Master(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='master')
     shop_name = models.CharField('Название магазина', max_length=200)
     description = models.TextField('Описание', blank=True)
     avatar = models.ImageField('Аватар', upload_to='masters/', blank=True, null=True)
-    cover = models.ImageField('Обложка', upload_to='masters/covers/', blank=True, null=True)  # НОВОЕ
+    cover = models.ImageField('Обложка', upload_to='masters/covers/', blank=True, null=True)
     phone = models.CharField('Телефон', max_length=20)
     email = models.EmailField('Email')
     created_at = models.DateTimeField('Дата регистрации', auto_now_add=True)
-    products_sold = models.PositiveIntegerField('Продано товаров', default=0)  # НОВОЕ
-    rating = models.FloatField('Рейтинг', default=0)  # НОВОЕ
+    products_sold = models.PositiveIntegerField('Продано товаров', default=0)
+    rating = models.FloatField('Рейтинг', default=0)
     
     def __str__(self):
         return self.shop_name
@@ -23,17 +22,15 @@ class Master(models.Model):
         verbose_name_plural = 'Мастера'
 
 
-# Потом Category
 class Category(models.Model):
     name = models.CharField(max_length=100)
     slug = models.SlugField(unique=True)
-    image = models.ImageField('Изображение', upload_to='categories/', blank=True, null=True)  # НОВОЕ
+    image = models.ImageField('Изображение', upload_to='categories/', blank=True, null=True)
 
     def __str__(self):
         return self.name
 
 
-# Потом Product
 class Product(models.Model):
     STATUS_CHOICES = [
         ('draft', 'Черновик'),
@@ -50,10 +47,10 @@ class Product(models.Model):
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     image = models.ImageField('Главное фото', upload_to='products/', blank=True, null=True)
-    images = models.JSONField('Дополнительные фото', default=list, blank=True)  # НОВОЕ
-    options = models.JSONField('Опции кастомизации', default=dict, blank=True)  # НОВОЕ
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='draft')  # НОВОЕ
-    views_count = models.PositiveIntegerField('Просмотры', default=0)  # НОВОЕ
+    images = models.JSONField('Дополнительные фото', default=list, blank=True)
+    options = models.JSONField('Опции кастомизации', default=dict, blank=True)
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='draft')
+    views_count = models.PositiveIntegerField('Просмотры', default=0)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -71,7 +68,6 @@ class Product(models.Model):
         return self.name
 
 
-# Order
 class Order(models.Model):
     STATUS_CHOICES = [
         ('awaiting_payment', 'Ожидает оплаты'),
@@ -89,13 +85,13 @@ class Order(models.Model):
     phone = models.CharField('Телефон', max_length=20)
     address = models.TextField('Адрес доставки')
     comment = models.TextField('Комментарий к заказу', blank=True)
-    tracking_number = models.CharField('Трек-номер', max_length=100, blank=True)  # НОВОЕ
+    tracking_number = models.CharField('Трек-номер', max_length=100, blank=True)
     
     created_at = models.DateTimeField('Дата создания', auto_now_add=True)
     updated_at = models.DateTimeField('Дата обновления', auto_now=True)
-    paid_at = models.DateTimeField('Дата оплаты', null=True, blank=True)  # НОВОЕ
-    shipped_at = models.DateTimeField('Дата отправки', null=True, blank=True)  # НОВОЕ
-    completed_at = models.DateTimeField('Дата завершения', null=True, blank=True)  # НОВОЕ
+    paid_at = models.DateTimeField('Дата оплаты', null=True, blank=True)
+    shipped_at = models.DateTimeField('Дата отправки', null=True, blank=True)
+    completed_at = models.DateTimeField('Дата завершения', null=True, blank=True)
     status = models.CharField('Статус', max_length=20, choices=STATUS_CHOICES, default='awaiting_payment')
     
     total_price = models.DecimalField('Сумма заказа', max_digits=10, decimal_places=2, default=0)
@@ -124,7 +120,6 @@ class OrderItem(models.Model):
         verbose_name_plural = 'Позиции заказов'
 
 
-# ===== ПОСТЫ (БЛОГ МАСТЕРА) =====
 class Post(models.Model):
     master = models.ForeignKey(Master, on_delete=models.CASCADE, related_name='posts', verbose_name='Публикации')
     product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True, blank=True, related_name='related_posts', verbose_name='Связанный товар')  # НОВОЕ
@@ -146,7 +141,6 @@ class Post(models.Model):
         ordering = ['-created_at']
 
 
-# ===== КОММЕНТАРИИ К ПОСТАМ =====
 class PostComment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments', verbose_name='Публикация')
     author_name = models.CharField('Имя автора', max_length=100)
@@ -164,7 +158,6 @@ class PostComment(models.Model):
         ordering = ['created_at']
 
 
-# ===== ЛАЙКИ К ПОСТАМ =====
 class PostLike(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='likes', verbose_name='Публикация')
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE, null=True, blank=True, related_name='post_likes')
@@ -177,7 +170,6 @@ class PostLike(models.Model):
         verbose_name_plural = 'Лайки'
 
 
-# ===== ПОДПИСКИ НА МАСТЕРОВ =====
 class Follow(models.Model):
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='following')
     master = models.ForeignKey(Master, on_delete=models.CASCADE, related_name='followers')
@@ -192,7 +184,6 @@ class Follow(models.Model):
         return f'{self.user.username} подписан на {self.master.shop_name}'
 
 
-# ===== ИЗБРАННОЕ (WISHLIST) =====
 class WishlistItem(models.Model):
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='wishlist')
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='wishlisted_by')
@@ -207,7 +198,6 @@ class WishlistItem(models.Model):
         return f'{self.user.username} добавил {self.product.name}'
 
 
-# ===== ОТЗЫВЫ НА ТОВАРЫ =====
 class Review(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews', verbose_name='Товар')
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='reviews', verbose_name='Пользователь')
@@ -227,7 +217,6 @@ class Review(models.Model):
         return f'{self.user.username} - {self.product.name} ({self.rating}⭐)'
 
 class ChatRoom(models.Model):
-    """Комната чата между покупателем и мастером"""
     customer = models.ForeignKey(User, on_delete=models.CASCADE, related_name='chat_rooms_as_customer')
     master = models.ForeignKey(Master, on_delete=models.CASCADE, related_name='chat_rooms')
     order = models.OneToOneField(Order, on_delete=models.SET_NULL, null=True, blank=True, related_name='chat_room')

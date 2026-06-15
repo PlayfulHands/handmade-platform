@@ -32,16 +32,13 @@ class ProductSerializer(serializers.ModelSerializer):
         read_only_fields = ['slug']
 
 
-# ===== СЕРИАЛИЗАТОРЫ ДЛЯ СОЗДАНИЯ ЗАКАЗА =====
 class OrderItemCreateSerializer(serializers.ModelSerializer):
-    """Для создания позиции заказа (write only)"""
     class Meta:
         model = OrderItem
         fields = ['product_id', 'product_name', 'product_price', 'quantity']
 
 
 class OrderCreateSerializer(serializers.ModelSerializer):
-    """Для создания заказа (write only)"""
     items = OrderItemCreateSerializer(many=True, write_only=True)
 
     class Meta:
@@ -62,9 +59,7 @@ class OrderCreateSerializer(serializers.ModelSerializer):
         return order
 
 
-# ===== СЕРИАЛИЗАТОРЫ ДЛЯ ЧТЕНИЯ ЗАКАЗА =====
 class OrderItemReadSerializer(serializers.ModelSerializer):
-    """Для отображения позиции заказа (read only)"""
     total_price = serializers.SerializerMethodField()
 
     class Meta:
@@ -76,7 +71,6 @@ class OrderItemReadSerializer(serializers.ModelSerializer):
 
 
 class OrderReadSerializer(serializers.ModelSerializer):
-    """Для отображения заказа с товарами (read only)"""
     items = OrderItemReadSerializer(many=True, read_only=True)
 
     class Meta:
@@ -84,7 +78,6 @@ class OrderReadSerializer(serializers.ModelSerializer):
         fields = ['id', 'status', 'created_at', 'total_price', 'items']
 
 
-# ===== СЕРИАЛИЗАТОРЫ ДЛЯ ПОСТОВ, КОММЕНТАРИЕВ, ЛАЙКОВ =====
 class PostCommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = PostComment
@@ -162,7 +155,6 @@ class ProductDetailSerializer(ProductSerializer):
         return False
 
 
-# ===== СЕРИАЛИЗАТОРЫ ДЛЯ АУТЕНТИФИКАЦИИ =====
 class RegisterSerializer(serializers.Serializer):
     username = serializers.CharField()
     password = serializers.CharField(write_only=True)
@@ -184,7 +176,6 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ('id', 'username', 'email', 'first_name', 'last_name')
 
 
-# ===== СЕРИАЛИЗАТОРЫ ДЛЯ ЧАТОВ =====
 class ChatMessageSerializer(serializers.ModelSerializer):
     sender_name = serializers.CharField(source='sender.username', read_only=True)
     is_owner = serializers.SerializerMethodField()

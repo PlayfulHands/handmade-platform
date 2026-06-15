@@ -264,8 +264,8 @@ onMounted(async () => {
 .loading, .empty {
     text-align: center;
     padding: 60px;
-    background: #FFFBF7; /* был white, стал тёплый бежевый */
-    border: 1px solid #E8DCC9; /* новая граница для гармонии */
+    background: #FFFBF7;
+    border: 1px solid #E8DCC9;
     border-radius: 8px;
     color: #666;
 }
@@ -290,10 +290,10 @@ onMounted(async () => {
 
 /* Галерея */
 .product-gallery {
-    background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+    background: #FFFBF7;
     border-radius: 12px;
     padding: 20px;
-    border: 1px solid #E8DCC9; /* новая граница для гармонии */
+    border: 1px solid #E8DCC9;
 }
 
 .main-image {
@@ -336,7 +336,7 @@ onMounted(async () => {
 }
 
 .thumbnail.active {
-    border-color: #C67B5C; /* был #42b883 (зелёный) */
+    border-color: #C67B5C;
 }
 
 .thumbnail img {
@@ -361,7 +361,7 @@ onMounted(async () => {
 .price {
     font-size: 32px;
     font-weight: bold;
-    color: #C67B5C; /* был #42b883 (зелёный) */
+    color: #C67B5C;
     margin: 0;
 }
 
@@ -379,28 +379,28 @@ onMounted(async () => {
 }
 
 .add-to-cart {
-    background: #C67B5C; /* был #42b883 (зелёный) */
+    background: #C67B5C;
     color: white;
     border: none;
 }
 
 .add-to-cart:hover {
-    background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+    background: #B56A4D;
 }
 
 .wishlist-btn {
-    background: #F5E9D7; /* был #f5f5f5 (холодный), стал тёплый бежевый */
+    background: #F5E9D7;
     color: #666;
     border: none;
 }
 
 .wishlist-btn.active {
-    background: #FFF3E6; /* был #ffebee (холодный розовый), стал тёплый персиковый */
-    color: #C67B5C; /* был #ff4444, стал терракотовый для гармонии */
+    background: #FFF3E6;
+    color: #C67B5C;
 }
 
 .wishlist-btn:hover {
-    background: #E8DCC9; /* был #e0e0e0 (холодный), стал тёплый бежевый */
+    background: #E8DCC9;
 }
 
 .category {
@@ -412,13 +412,13 @@ onMounted(async () => {
 .description, .customization, .creation-story {
     margin: 25px 0;
     padding-top: 20px;
-    border-top: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+    border-top: 1px solid #E8DCC9;
 }
 
 .description h2, .customization h2, .creation-story h2 {
     font-size: 20px;
     margin-bottom: 12px;
-    color: #2C2C2C; /* был #333, стал чуть темнее для контраста */
+    color: #2C2C2C;
 }
 
 .description p {
@@ -438,22 +438,22 @@ onMounted(async () => {
 .customization label {
     font-weight: 500;
     min-width: 100px;
-    color: #2C2C2C; /* был #333, стал чуть темнее */
+    color: #2C2C2C;
 }
 
 .customization select, .customization input, .customization textarea {
     padding: 8px 12px;
-    border: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+    border: 1px solid #E8DCC9;
     border-radius: 6px;
     font-size: 14px;
     width: 250px;
-    background: #FFFBF7; /* был white, стал тёплый бежевый */
+    background: #FFFBF7;
     transition: border-color 0.3s;
 }
 
 .customization select:focus, .customization input:focus, .customization textarea:focus {
     outline: none;
-    border-color: #C67B5C; /* акцент при фокусе — терракотовый */
+    border-color: #C67B5C;
 }
 
 .customization textarea {
@@ -463,16 +463,16 @@ onMounted(async () => {
 
 /* История создания */
 .story-post {
-    background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+    background: #FFFBF7;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
-    border: 1px solid #E8DCC9; /* новая граница для гармонии */
+    border: 1px solid #E8DCC9;
 }
 
 .story-post h3 {
     margin-bottom: 10px;
-    color: #C67B5C; /* был #42b883 (зелёный) */
+    color: #C67B5C;
 }
 
 .story-post p {
@@ -502,7 +502,7 @@ onMounted(async () => {
 .reviews-section {
     margin-top: 50px;
     padding-top: 30px;
-    border-top: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+    border-top: 1px solid #E8DCC9;
 }
 
 .reviews-section h2 {
@@ -517,7 +517,7 @@ onMounted(async () => {
 
 .rating-stars {
     font-weight: bold;
-    color: #D4A574; /* был #f5a623 (оранжевый), стал тёплый золотисто-бежевый */
+    color: #D4A574;
 }
 
 .rating-count {
@@ -532,10 +532,10 @@ onMounted(async () => {
 }
 
 .review-card {
-    background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+    background: #FFFBF7;
     border-radius: 8px;
     padding: 15px;
-    border: 1px solid #E8DCC9; /* новая граница для гармонии */
+    border: 1px solid #E8DCC9;
 }
 
 .review-header {
@@ -545,11 +545,11 @@ onMounted(async () => {
 }
 
 .review-rating {
-    color: #D4A574; /* был #f5a623 (оранжевый), стал тёплый золотисто-бежевый */
+    color: #D4A574;
 }
 
 .review-comment {
-    color: #2C2C2C; /* был #333, стал чуть темнее */
+    color: #2C2C2C;
     margin-bottom: 8px;
 }
 
@@ -562,7 +562,7 @@ onMounted(async () => {
 .master-other-products {
     margin-top: 50px;
     padding-top: 30px;
-    border-top: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+    border-top: 1px solid #E8DCC9;
 }
 
 .master-other-products h2 {
@@ -582,7 +582,7 @@ onMounted(async () => {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s;
-    border: 1px solid #E8DCC9; /* новая граница для гармонии */
+    border: 1px solid #E8DCC9;
 }
 
 .product-card:hover {
@@ -621,7 +621,7 @@ onMounted(async () => {
 .card-info .price {
     font-size: 16px;
     font-weight: bold;
-    color: #C67B5C; /* был #42b883 (зелёный) */
+    color: #C67B5C;
     margin: 0;
 }
 
@@ -662,7 +662,7 @@ onMounted(async () => {
     position: absolute;
     top: -40px;
     right: -40px;
-    background: #C67B5C; /* был прозрачный, стал терракотовый для видимости */
+    background: #C67B5C;
     border: none;
     font-size: 40px;
     color: white;
@@ -677,7 +677,7 @@ onMounted(async () => {
 }
 
 .close-modal:hover {
-    background: #B56A4D; /* был прозрачный, стал темнее при наведении */
+    background: #B56A4D;
 }
 
 @media (max-width: 768px) {

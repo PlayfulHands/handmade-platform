@@ -43,20 +43,14 @@ onMounted(() => {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  /* Градиентный фон (запасной вариант) */
+
   background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
-  /* Если хотите изображение с размытием – раскомментируйте и замените URL */
-  /* background-image: url('/path/to/your-image.jpg'); */
-  /* background-size: cover; */
-  /* background-position: center; */
-  /* background-attachment: fixed; */
   color: #1e1e1e;
   line-height: 1.5;
-  /* Для плавного скролла */
+
   scroll-behavior: smooth;
 }
 
-/* Псевдоэлемент для размытия, если используется изображение */
 /* body::before {
   content: '';
   position: fixed;
@@ -73,14 +67,14 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* Полупрозрачный фон для читаемости текста поверх градиента/изображения */
+
   background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(2px); /* лёгкое размытие фона под контентом, работает в современных браузерах */
+  backdrop-filter: blur(2px);
 }
 
 header {
-  background-color: #FFFACD; /*#42b883*/
-  color: #2C2C2C; /*white*/
+  background-color: #FFFACD;
+  color: #2C2C2C;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   position: sticky;
@@ -106,7 +100,7 @@ nav {
 }
 
 nav a {
-  color: #2C2C2C; /*white*/
+  color: #2C2C2C;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -116,7 +110,7 @@ nav a {
 
 nav a:hover {
   opacity: 0.8;
-  color: #1a1a1a; /*Добавил*/
+  color: #1a1a1a;
 }
 
 .cart-link {
@@ -127,7 +121,7 @@ nav a:hover {
   position: absolute;
   top: -8px;
   right: -12px;
-  background: #D32F2F;/*#ff4444*/
+  background: #D32F2F;
   color: white;
   font-size: 12px;
   font-weight: bold;
@@ -159,7 +153,6 @@ main {
   padding: 20px;
 }
 
-/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -173,7 +166,6 @@ main {
   }
 }
 
-/* Улучшенная читаемость ссылок на тёмном фоне (если фон тёмный) */
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(135deg, #1a2a3a, #0f1a24);

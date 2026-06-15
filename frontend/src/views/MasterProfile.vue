@@ -254,8 +254,8 @@ const startChat = async () => {
 .loading, .empty {
   text-align: center;
   padding: 60px;
-  background: #FFFBF7; /* был white, стал тёплый бежевый */
-  border: 1px solid #E8DCC9; /* новая граница для гармонии */
+  background: #FFFBF7;
+  border: 1px solid #E8DCC9;
   border-radius: 8px;
   color: #666;
 }
@@ -263,7 +263,7 @@ const startChat = async () => {
 /* Обложка */
 .cover {
   height: 200px;
-  background: linear-gradient(135deg, #C67B5C, #2C2C2C); /* был #42b883 и #2c3e50, стал терракотовый градиент */
+  background: linear-gradient(135deg, #C67B5C, #2C2C2C);
   border-radius: 12px 12px 0 0;
   overflow: hidden;
 }
@@ -277,7 +277,7 @@ const startChat = async () => {
 .cover-placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #C67B5C, #2C2C2C); /* был #42b883 и #2c3e50 */
+  background: linear-gradient(135deg, #C67B5C, #2C2C2C);
 }
 
 /* Профиль */
@@ -314,7 +314,7 @@ const startChat = async () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   font-size: 48px;
   font-weight: bold;
@@ -328,18 +328,18 @@ const startChat = async () => {
 .info h1 {
   font-size: 28px;
   margin-bottom: 8px;
-  color: #2C2C2C; /* был #333, стал чуть темнее для контраста */
+  color: #2C2C2C;
 }
 
 .about-master {
   margin: 15px 0;
   padding: 12px 0;
-  border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9;
 }
 .about-master h2 {
   font-size: 18px;
   margin-bottom: 8px;
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
 }
 .about-master p {
   color: #555;
@@ -370,7 +370,7 @@ const startChat = async () => {
   display: block;
   font-size: 20px;
   font-weight: bold;
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
 }
 .stat-label {
   font-size: 12px;
@@ -386,21 +386,21 @@ const startChat = async () => {
   transition: all 0.3s;
 }
 .follow-btn {
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   border: none;
 }
 .follow-btn.following {
-  background: #F5E9D7; /* был #f0f0f0 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
   color: #666;
 }
 .message-btn {
   background: white;
-  color: #C67B5C; /* был #42b883 (зелёный) */
-  border: 1px solid #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
+  border: 1px solid #C67B5C;
 }
 .message-btn:hover {
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
 }
 
@@ -409,7 +409,7 @@ const startChat = async () => {
   display: flex;
   gap: 20px;
   margin: 30px 0;
-  border-bottom: 2px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 2px solid #E8DCC9;
 }
 .tabs button {
   padding: 10px 20px;
@@ -420,9 +420,9 @@ const startChat = async () => {
   color: #666;
 }
 .tabs button.active {
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
   font-weight: bold;
-  border-bottom: 3px solid #C67B5C; /* был #42b883 (зелёный) */
+  border-bottom: 3px solid #C67B5C;
 }
 
 /* Фильтр категорий */
@@ -433,7 +433,7 @@ const startChat = async () => {
   margin-bottom: 20px;
 }
 .filter-tag {
-  background: #F5E9D7; /* был #f0f0f0 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
   padding: 6px 16px;
   border: none;
   border-radius: 20px;
@@ -442,11 +442,11 @@ const startChat = async () => {
   transition: all 0.2s;
 }
 .filter-tag.active {
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
 }
 .filter-tag:hover {
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
 }
 
@@ -485,7 +485,7 @@ const startChat = async () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFFBF7; /* был #f5f5f5 (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
   color: #999;
 }
 .product-info {
@@ -497,19 +497,19 @@ const startChat = async () => {
 }
 .price {
   font-weight: bold;
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
 }
 .add-to-cart-btn {
   width: 100%;
   padding: 10px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   border: none;
   cursor: pointer;
   transition: background 0.3s;
 }
 .add-to-cart-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D;
 }
 
 /* Публикации */
@@ -531,7 +531,7 @@ const startChat = async () => {
 }
 .post-card h3 {
   margin-bottom: 10px;
-  color: #2C2C2C; /* был #333, стал чуть темнее */
+  color: #2C2C2C;
 }
 .post-card p {
   color: #666;
@@ -552,7 +552,7 @@ const startChat = async () => {
   gap: 15px;
   margin-top: 15px;
   padding-top: 10px;
-  border-top: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-top: 1px solid #E8DCC9;
   color: #666;
   font-size: 14px;
 }
@@ -561,7 +561,7 @@ const startChat = async () => {
 .reviews-section {
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-top: 1px solid #E8DCC9;
 }
 .reviews-section h2 {
   margin-bottom: 20px;
@@ -574,10 +574,10 @@ const startChat = async () => {
   gap: 15px;
 }
 .review-card {
-  background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
   border-radius: 8px;
   padding: 15px;
-  border: 1px solid #E8DCC9; /* новая граница для гармонии */
+  border: 1px solid #E8DCC9;
 }
 .review-header {
   display: flex;
@@ -585,7 +585,7 @@ const startChat = async () => {
   margin-bottom: 8px;
 }
 .review-rating {
-  color: #D4A574; /* был #f5a623 (оранжевый), стал тёплый золотисто-бежевый для гармонии */
+  color: #D4A574;
 }
 .review-date {
   font-size: 12px;

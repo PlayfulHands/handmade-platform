@@ -272,7 +272,7 @@ onMounted(async () => {
 .page-title {
   text-align: center;
   margin-bottom: 30px;
-  color: #2C2C2C; /* был #2c3e50 (холодный синий), стал нейтрально-чёрный */
+  color: #2C2C2C;
   font-size: 2rem;
 }
 
@@ -280,7 +280,7 @@ onMounted(async () => {
   font-size: 1.6rem;
   margin-bottom: 20px;
   color: #333;
-  border-left: 4px solid #C67B5C; /* был #42b883 (зелёный) */
+  border-left: 4px solid #C67B5C;
   padding-left: 15px;
 }
 
@@ -298,16 +298,16 @@ onMounted(async () => {
 .search-input {
   width: 100%;
   padding: 12px 16px;
-  border: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9;
   border-radius: 30px;
   font-size: 16px;
   outline: none;
   transition: border-color 0.3s, box-shadow 0.3s;
-  background: #FFFBF7; /* был white, стал тёплый бежевый */
+  background: #FFFBF7;
 }
 .search-input:focus {
-  border-color: #C67B5C; /* был #42b883 (зелёный) */
-  box-shadow: 0 0 0 3px rgba(198, 123, 92, 0.2); /* был rgba(66, 184, 131, 0.2) */
+  border-color: #C67B5C;
+  box-shadow: 0 0 0 3px rgba(198, 123, 92, 0.2);
 }
 .search-btn {
   position: absolute;
@@ -328,15 +328,15 @@ onMounted(async () => {
   cursor: not-allowed;
 }
 .search-btn:hover:not(:disabled) {
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
 }
 .suggestions-list {
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
-  background: #FFFBF7; /* был white, стал тёплый бежевый */
-  border: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  background: #FFFBF7;
+  border: 1px solid #E8DCC9;
   border-radius: 12px;
   margin-top: 4px;
   padding: 0;
@@ -352,7 +352,7 @@ onMounted(async () => {
   transition: background 0.2s;
 }
 .suggestions-list li:hover {
-  background: #F5E9D7; /* был #f0f0f0 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
 }
 
 /* Тренды */
@@ -406,7 +406,7 @@ onMounted(async () => {
   gap: 12px;
 }
 .category-tag {
-  background: #F5E9D7; /* был #f0f0f0 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
   padding: 8px 20px;
   border: none;
   border-radius: 30px;
@@ -416,14 +416,14 @@ onMounted(async () => {
   color: #333;
 }
 .category-tag:hover {
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   transform: translateY(-2px);
 }
 .category-tag.active {
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
-  box-shadow: 0 2px 6px rgba(198, 123, 92, 0.3); /* был rgba(66,184,131,0.3) */
+  box-shadow: 0 2px 6px rgba(198, 123, 92, 0.3);
 }
 
 /* Товары – красивая сетка */
@@ -487,7 +487,7 @@ onMounted(async () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFFBF7; /* был #f5f5f5 (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
   color: #999;
 }
 .product-info {
@@ -502,7 +502,7 @@ onMounted(async () => {
 }
 .price {
   font-weight: bold;
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
   margin-bottom: 6px;
   font-size: 18px;
 }
@@ -511,7 +511,6 @@ onMounted(async () => {
   font-size: 13px;
 }
 
-/* Публикации – вертикальный список по одному */
 .posts-section {
   margin-bottom: 60px;
 }
@@ -525,7 +524,7 @@ onMounted(async () => {
 .masters-section {
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-top: 1px solid #E8DCC9;
 }
 .masters-grid {
   display: grid;
@@ -554,7 +553,7 @@ onMounted(async () => {
   margin: 0 auto 12px;
   border-radius: 50%;
   overflow: hidden;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   transition: transform 0.3s;
 }
 .master-card:hover .master-avatar {
@@ -571,7 +570,7 @@ onMounted(async () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   font-size: 32px;
   font-weight: bold;
@@ -611,8 +610,8 @@ onMounted(async () => {
 .empty {
   text-align: center;
   padding: 40px;
-  background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
-  border: 1px solid #E8DCC9; /* новая граница для гармонии */
+  background: #FFFBF7;
+  border: 1px solid #E8DCC9;
   border-radius: 12px;
   color: #666;
 }

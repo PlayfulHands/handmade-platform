@@ -91,7 +91,7 @@ const formatPrice = (price) => {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -99,7 +99,7 @@ const formatPrice = (price) => {
 }
 
 .continue-shopping:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D; 
 }
 
 .cart-content {
@@ -122,7 +122,7 @@ const formatPrice = (price) => {
   gap: 20px;
   align-items: center;
   padding: 15px 0;
-  border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9;
 }
 
 .cart-item:last-child {
@@ -190,7 +190,7 @@ const formatPrice = (price) => {
 
 .item-total {
   font-weight: bold;
-  color: #2C2C2C; /* был #2c3e50 (холодный синий), стал нейтрально-чёрный */
+  color: #2C2C2C; 
 }
 
 .remove-btn {
@@ -228,7 +228,7 @@ const formatPrice = (price) => {
 .summary-row.total {
   font-size: 18px;
   font-weight: bold;
-  border-top: 2px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-top: 2px solid #E8DCC9; 
   margin-top: 10px;
   padding-top: 20px;
 }
@@ -237,7 +237,7 @@ const formatPrice = (price) => {
   display: block;
   width: 100%;
   padding: 12px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C; 
   color: white;
   text-decoration: none;
   text-align: center;
@@ -250,7 +250,7 @@ const formatPrice = (price) => {
 }
 
 .checkout-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D; 
 }
 
 .clear-btn {

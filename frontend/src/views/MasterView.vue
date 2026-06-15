@@ -822,7 +822,7 @@ const logout = () => {
 
 .stats-btn {
   padding: 8px 16px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   border: none;
   border-radius: 4px;
@@ -835,7 +835,7 @@ const logout = () => {
 }
 
 .stats-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D;
 }
 
 .logout-btn {
@@ -855,7 +855,7 @@ const logout = () => {
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
-  border-bottom: 2px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 2px solid #E8DCC9;
   padding-bottom: 10px;
   overflow-x: auto;
 }
@@ -872,9 +872,9 @@ const logout = () => {
 }
 
 .tabs button.active {
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
   font-weight: bold;
-  border-bottom: 3px solid #C67B5C; /* был #42b883 (зелёный) */
+  border-bottom: 3px solid #C67B5C;
 }
 
 .tab-content {
@@ -907,10 +907,10 @@ const logout = () => {
   gap: 15px;
   align-items: center;
   padding: 15px;
-  border: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9;
   border-radius: 8px;
   transition: box-shadow 0.3s;
-  background: #FFFBF7; /* был прозрачный, стал тёплый бежевый */
+  background: #FFFBF7;
 }
 
 .product-item:hover {
@@ -920,7 +920,7 @@ const logout = () => {
 .product-image {
   width: 80px;
   height: 80px;
-  background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -938,7 +938,7 @@ const logout = () => {
 
 .price {
   font-weight: bold;
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
 }
 
 .category {
@@ -962,7 +962,7 @@ const logout = () => {
 }
 
 .edit-btn {
-  background: #F5E9D7; /* был #f0f0f0 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
 }
 
 .edit-btn:hover {
@@ -1004,11 +1004,11 @@ const logout = () => {
 .form-group select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9;
   border-radius: 4px;
   font-size: 16px;
   font-family: inherit;
-  background: #FFFBF7; /* был white, стал тёплый бежевый */
+  background: #FFFBF7;
   transition: border-color 0.3s;
 }
 
@@ -1016,7 +1016,7 @@ const logout = () => {
 .form-group textarea:focus,
 .form-group select:focus {
   outline: none;
-  border-color: #C67B5C; /* акцент при фокусе — терракотовый */
+  border-color: #C67B5C;
 }
 
 .form-group textarea {
@@ -1025,7 +1025,7 @@ const logout = () => {
 
 .submit-btn {
   padding: 12px 30px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   border: none;
   border-radius: 6px;
@@ -1035,7 +1035,7 @@ const logout = () => {
 }
 
 .submit-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D;
 }
 
 .orders-list {
@@ -1045,10 +1045,10 @@ const logout = () => {
 }
 
 .order-card {
-  border: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9;
   border-radius: 8px;
   padding: 20px;
-  background: #FFFBF7; /* был #fafafa (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
 }
 
 .order-header {
@@ -1057,7 +1057,7 @@ const logout = () => {
   align-items: center;
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9;
 }
 
 .order-number {
@@ -1073,7 +1073,6 @@ const logout = () => {
   font-weight: 500;
 }
 
-/* Статусы оставляем семантическими — они несут смысл */
 .status-new { background: #e3f2fd; color: #1976d2; }
 .status-processing { background: #fff3e0; color: #f57c00; }
 .status-completed { background: #e8f5e8; color: #388e3c; }
@@ -1110,26 +1109,26 @@ const logout = () => {
   display: flex;
   justify-content: space-between;
   padding: 5px 0;
-  border-bottom: 1px dotted #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border-bottom: 1px dotted #E8DCC9;
   font-size: 14px;
 }
 
 .item-total {
   font-weight: bold;
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
 }
 
 .order-total {
   text-align: right;
   font-size: 16px;
   padding: 10px 0;
-  border-top: 2px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border-top: 2px solid #E8DCC9;
 }
 
 .order-status-control {
   margin-top: 15px;
   padding-top: 15px;
-  border-top: 1px dashed #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border-top: 1px dashed #E8DCC9;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1142,7 +1141,7 @@ const logout = () => {
 
 .status-select {
   padding: 5px 10px;
-  border: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9;
   border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
@@ -1151,7 +1150,7 @@ const logout = () => {
 }
 
 .status-select:hover {
-  border-color: #C67B5C; /* был #42b883 (зелёный) */
+  border-color: #C67B5C; 
 }
 
 .profile-header {
@@ -1163,7 +1162,7 @@ const logout = () => {
 
 .edit-profile-btn {
   padding: 8px 16px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   border: none;
   border-radius: 4px;
@@ -1176,7 +1175,7 @@ const logout = () => {
 }
 
 .edit-profile-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D;
 }
 
 .profile-info {
@@ -1192,7 +1191,7 @@ const logout = () => {
 .avatar {
   width: 200px;
   height: 200px;
-  background: linear-gradient(135deg, #C67B5C, #2C2C2C); /* был #42b883 и #2c3e50, стал терракотовый градиент */
+  background: linear-gradient(135deg, #C67B5C, #2C2C2C);
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -1216,7 +1215,7 @@ const logout = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #C67B5C, #2C2C2C); /* был #42b883 и #2c3e50 */
+  background: linear-gradient(135deg, #C67B5C, #2C2C2C);
   color: white;
   font-size: 48px;
   font-weight: bold;
@@ -1224,17 +1223,17 @@ const logout = () => {
 
 .info-details {
   flex: 1;
-  background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
   border-radius: 12px;
   padding: 25px;
-  border: 1px solid #E8DCC9; /* новая граница для гармонии */
+  border: 1px solid #E8DCC9;
 }
 
 .info-row {
   display: flex;
   margin-bottom: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9;
 }
 
 .info-row:last-child {
@@ -1251,7 +1250,7 @@ const logout = () => {
 
 .info-value {
   flex: 1;
-  color: #2C2C2C; /* был #333, стал чуть темнее */
+  color: #2C2C2C;
 }
 
 .file-hint {
@@ -1292,7 +1291,7 @@ const logout = () => {
 
 .cancel-btn {
   padding: 10px 20px;
-  background: #F5E9D7; /* был #f5f5f5 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -1312,7 +1311,7 @@ const logout = () => {
 .load-stats-btn {
   margin-top: 20px;
   padding: 12px 30px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   border: none;
   border-radius: 6px;
@@ -1322,7 +1321,7 @@ const logout = () => {
 }
 
 .load-stats-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D;
 }
 
 .stats-cards {
@@ -1332,7 +1331,6 @@ const logout = () => {
   margin-bottom: 40px;
 }
 
-/* Градиенты для статистики оставляем — они декоративные и не конфликтуют с темой */
 .stat-card {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 12px;
@@ -1369,15 +1367,15 @@ const logout = () => {
 
 .stats-section {
   margin-bottom: 30px;
-  background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
   border-radius: 8px;
   padding: 20px;
-  border: 1px solid #E8DCC9; /* новая граница для гармонии */
+  border: 1px solid #E8DCC9;
 }
 
 .stats-section h3 {
   margin-bottom: 20px;
-  color: #2C2C2C; /* был #333, стал чуть темнее */
+  color: #2C2C2C;
 }
 
 .stats-table {
@@ -1388,14 +1386,14 @@ const logout = () => {
 .stats-table th {
   text-align: left;
   padding: 12px;
-  background: #F5E9D7; /* был #f0f0f0 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
   color: #2C2C2C;
   font-weight: 600;
 }
 
 .stats-table td {
   padding: 10px 12px;
-  border-bottom: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9;
 }
 
 .stats-table tr:last-child td {
@@ -1403,6 +1401,6 @@ const logout = () => {
 }
 
 .stats-table tr:hover td {
-  background: #F5E9D7; /* был #f5f5f5 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
 }
 </style>

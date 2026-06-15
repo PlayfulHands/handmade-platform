@@ -104,7 +104,6 @@ onMounted(() => {
   padding: 40px 20px;
 }
 
-/* Карточки */
 .success-card,
 .loading-card,
 .error-card {
@@ -113,7 +112,7 @@ onMounted(() => {
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
   padding: 40px;
   text-align: center;
-  border: 1px solid #E8DCC9; /* новая граница для гармонии */
+  border: 1px solid #E8DCC9;
 }
 
 .loading-card, .error-card {
@@ -132,7 +131,7 @@ onMounted(() => {
 
 h1 {
   margin-bottom: 20px;
-  color: #2C2C2C; /* был #2c3e50 (холодный синий), стал нейтрально-чёрный */
+  color: #2C2C2C;
 }
 
 .order-number {
@@ -150,12 +149,12 @@ h1 {
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 14px;
-  background: #F5E9D7; /* был #f0f0f0 (холодный), стал тёплый бежевый */
-  color: #2C2C2C; /* был #333, стал чуть темнее */
+  background: #F5E9D7;
+  color: #2C2C2C;
 }
 
 .status-badge.awaiting_payment {
-  background: #FFF3CD; /* оставляем светлый жёлтый — семантический цвет ожидания */
+  background: #FFF3CD;
   color: #856404;
 }
 
@@ -163,28 +162,28 @@ h1 {
 .order-items {
   text-align: left;
   margin: 30px 0 20px;
-  border-top: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-top: 1px solid #E8DCC9;
   padding-top: 20px;
 }
 
 .order-items h3 {
   margin-bottom: 16px;
   font-size: 18px;
-  color: #2C2C2C; /* был #333, стал чуть темнее */
+  color: #2C2C2C;
 }
 
 .order-item {
   display: flex;
   gap: 16px;
   padding: 16px 0;
-  border-bottom: 1px solid #E8DCC9; /* был #f0f0f0 (холодный), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9;
 }
 
 .item-image {
   width: 80px;
   height: 80px;
   flex-shrink: 0;
-  background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -209,7 +208,7 @@ h1 {
 .item-name {
   font-weight: bold;
   margin-bottom: 8px;
-  color: #2C2C2C; /* был #2c3e50 (холодный синий), стал нейтрально-чёрный */
+  color: #2C2C2C;
 }
 
 .item-meta {
@@ -221,7 +220,7 @@ h1 {
 .item-total {
   font-size: 15px;
   font-weight: 500;
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
 }
 
 .order-total {
@@ -229,11 +228,11 @@ h1 {
   font-size: 20px;
   margin-top: 20px;
   padding-top: 16px;
-  border-top: 2px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-top: 2px solid #E8DCC9;
 }
 
 .order-total strong {
-  color: #2C2C2C; /* был #2c3e50 (холодный синий), стал нейтрально-чёрный */
+  color: #2C2C2C;
   font-size: 24px;
 }
 
@@ -247,7 +246,7 @@ h1 {
   display: inline-block;
   margin-top: 30px;
   padding: 12px 30px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -256,13 +255,12 @@ h1 {
 }
 
 .continue-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D;
 }
 
-/* Лоадер */
 .loader {
-  border: 3px solid #F5E9D7; /* был #f3f3f3 (холодный), стал тёплый бежевый */
-  border-top: 3px solid #C67B5C; /* был #42b883 (зелёный) */
+  border: 3px solid #F5E9D7;
+  border-top: 3px solid #C67B5C;
   border-radius: 50%;
   width: 40px;
   height: 40px;

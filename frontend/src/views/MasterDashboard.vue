@@ -669,7 +669,7 @@ const logout = () => {
 
 .stats-btn { 
   padding: 8px 16px; 
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white; 
   border: none; 
   border-radius: 4px; 
@@ -677,7 +677,7 @@ const logout = () => {
   transition: background 0.3s;
 }
 .stats-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D;
 }
 
 .logout-btn { 
@@ -693,7 +693,7 @@ const logout = () => {
   display: flex; 
   gap: 10px; 
   margin-bottom: 30px; 
-  border-bottom: 2px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 2px solid #E8DCC9;
   padding-bottom: 10px; 
   overflow-x: auto; 
   align-items: center; 
@@ -715,9 +715,9 @@ const logout = () => {
 
 .tabs button.active, 
 .profile-link { 
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
   font-weight: bold; 
-  border-bottom: 3px solid #C67B5C; /* был #42b883 (зелёный) */
+  border-bottom: 3px solid #C67B5C;
 }
 
 .tab-content { 
@@ -745,15 +745,15 @@ const logout = () => {
   gap: 15px; 
   align-items: center; 
   padding: 15px; 
-  border: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9;
   border-radius: 8px; 
-  background: #FFFBF7; /* был прозрачный, стал тёплый бежевый */
+  background: #FFFBF7;
 }
 
 .product-image { 
   width: 80px; 
   height: 80px; 
-  background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
   border-radius: 4px; 
   overflow: hidden; 
 }
@@ -766,7 +766,7 @@ const logout = () => {
 
 .price { 
   font-weight: bold; 
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
 }
 
 .product-actions { 
@@ -784,7 +784,7 @@ const logout = () => {
 }
 
 .edit-btn { 
-  background: #F5E9D7; /* был #f0f0f0 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
 }
 
 .delete-btn { 
@@ -818,9 +818,9 @@ const logout = () => {
 .form-group select { 
   width: 100%; 
   padding: 10px; 
-  border: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9;
   border-radius: 4px; 
-  background: #FFFBF7; /* был white, стал тёплый бежевый */
+  background: #FFFBF7;
   transition: border-color 0.3s;
 }
 
@@ -828,12 +828,12 @@ const logout = () => {
 .form-group textarea:focus,
 .form-group select:focus {
   outline: none;
-  border-color: #C67B5C; /* акцент при фокусе — терракотовый */
+  border-color: #C67B5C;
 }
 
 .submit-btn { 
   padding: 12px 30px; 
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white; 
   border: none; 
   border-radius: 6px; 
@@ -841,7 +841,7 @@ const logout = () => {
   transition: background 0.3s;
 }
 .submit-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D;
 }
 
 .posts-list { 
@@ -852,10 +852,10 @@ const logout = () => {
 }
 
 .post-item { 
-  border: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9;
   border-radius: 8px; 
   padding: 20px; 
-  background: #FFFBF7; /* был #fafafa (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
 }
 
 .post-header { 
@@ -894,10 +894,10 @@ const logout = () => {
 }
 
 .order-card { 
-  border: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9;
   border-radius: 8px; 
   padding: 20px; 
-  background: #FFFBF7; /* был #fafafa (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
 }
 
 .order-header { 
@@ -906,7 +906,7 @@ const logout = () => {
   align-items: center; 
   margin-bottom: 15px; 
   padding-bottom: 10px; 
-  border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9;
 }
 
 .order-number { 
@@ -920,7 +920,6 @@ const logout = () => {
   font-size: 14px; 
 }
 
-/* Статусы оставляем семантическими — они несут смысл */
 .status-new { background: #e3f2fd; color: #1976d2; }
 .status-processing { background: #fff3e0; color: #f57c00; }
 .status-completed { background: #e8f5e8; color: #388e3c; }
@@ -941,24 +940,24 @@ const logout = () => {
   display: flex; 
   justify-content: space-between; 
   padding: 5px 0; 
-  border-bottom: 1px dotted #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border-bottom: 1px dotted #E8DCC9;
 }
 
 .item-total { 
   font-weight: bold; 
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
 }
 
 .order-total { 
   text-align: right; 
   padding: 10px 0; 
-  border-top: 2px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border-top: 2px solid #E8DCC9;
 }
 
 .order-status-control { 
   margin-top: 15px; 
   padding-top: 15px; 
-  border-top: 1px dashed #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border-top: 1px dashed #E8DCC9;
   display: flex; 
   gap: 10px; 
 }
@@ -970,7 +969,6 @@ const logout = () => {
   margin-bottom: 40px; 
 }
 
-/* Градиенты для статистики оставляем — они декоративные и не конфликтуют с темой */
 .stat-card { 
   background: linear-gradient(135deg, #667eea, #764ba2); 
   border-radius: 12px; 
@@ -997,7 +995,7 @@ const logout = () => {
 }
 
 .stats-section { 
-  background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
   border-radius: 8px; 
   padding: 20px; 
   margin-bottom: 20px; 
@@ -1011,12 +1009,12 @@ const logout = () => {
 .stats-table th { 
   text-align: left; 
   padding: 12px; 
-  background: #F5E9D7; /* был #f0f0f0 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
 }
 
 .stats-table td { 
   padding: 10px 12px; 
-  border-bottom: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9;
 }
 
 .modal-overlay { 
@@ -1051,7 +1049,7 @@ const logout = () => {
 
 .cancel-btn { 
   padding: 10px 20px; 
-  background: #F5E9D7; /* был #f5f5f5 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
   border: none; 
   border-radius: 6px; 
   cursor: pointer;
@@ -1061,7 +1059,6 @@ const logout = () => {
   background: #E8DCC9;
 }
 
-/* ===== Стили для чатов ===== */
 .chats-header {
   display: flex;
   justify-content: space-between;
@@ -1070,7 +1067,7 @@ const logout = () => {
 }
 
 .refresh-rooms-btn {
-  background: #F5E9D7; /* был #f0f0f0 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
   border: none;
   padding: 6px 12px;
   border-radius: 6px;
@@ -1089,7 +1086,7 @@ const logout = () => {
 }
 
 .rooms-list { 
-  background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
   border-radius: 8px; 
   overflow-y: auto; 
 }
@@ -1100,19 +1097,19 @@ const logout = () => {
   gap: 12px; 
   padding: 12px; 
   cursor: pointer; 
-  border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9;
   position: relative; 
 }
 
 .room-item.active { 
-  background: #FFF3E6; /* был #e8f5e9 (зеленоватый), стал тёплый персиковый */
+  background: #FFF3E6;
 }
 
 .room-avatar { 
   width: 48px; 
   height: 48px; 
   border-radius: 50%; 
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white; 
   display: flex; 
   align-items: center; 
@@ -1128,7 +1125,7 @@ const logout = () => {
   display: flex; 
   align-items: center; 
   justify-content: center; 
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white; 
   font-weight: bold; 
   font-size: 20px; 
@@ -1168,8 +1165,8 @@ const logout = () => {
 
 .chat-header { 
   padding: 12px; 
-  border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
-  background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9;
+  background: #FFFBF7;
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
@@ -1205,12 +1202,12 @@ const logout = () => {
 }
 
 .message.incoming { 
-  background: #F5E9D7; /* был #f0f0f0 (холодный), стал тёплый бежевый */
+  background: #F5E9D7;
   align-self: flex-start; 
 }
 
 .message.outgoing { 
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white; 
   align-self: flex-end; 
 }
@@ -1225,13 +1222,13 @@ const logout = () => {
   display: flex; 
   gap: 8px; 
   padding: 12px; 
-  border-top: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-top: 1px solid #E8DCC9;
 }
 
 .chat-input input { 
   flex: 1; 
   padding: 8px; 
-  border: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9;
   border-radius: 20px; 
   background: #FFFBF7;
   transition: border-color 0.3s;
@@ -1242,7 +1239,7 @@ const logout = () => {
 }
 
 .chat-input button { 
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   border: none; 
   border-radius: 50%; 
   width: 36px; 
@@ -1250,7 +1247,7 @@ const logout = () => {
   transition: background 0.3s;
 }
 .chat-input button:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D;
 }
 
 .chat-placeholder { 

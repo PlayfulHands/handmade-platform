@@ -56,8 +56,8 @@ const removeFromWishlist = async (productId) => {
 .loading, .empty {
   text-align: center;
   padding: 60px;
-  background: #FFFBF7; /* был white, стал тёплый бежевый */
-  border: 1px solid #E8DCC9; /* новая граница для гармонии */
+  background: #FFFBF7;
+  border: 1px solid #E8DCC9;
   border-radius: 8px;
   color: #666;
 }
@@ -66,7 +66,7 @@ const removeFromWishlist = async (productId) => {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -74,7 +74,7 @@ const removeFromWishlist = async (productId) => {
 }
 
 .continue-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D;
 }
 
 .wishlist-grid {
@@ -91,17 +91,17 @@ const removeFromWishlist = async (productId) => {
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border: 1px solid #E8DCC9; /* новая граница для гармонии */
+  border: 1px solid #E8DCC9;
 }
 
 .product-image {
   width: 120px;
   height: 120px;
-  background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+  background: #FFFBF7;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
-  border: 1px solid #E8DCC9; /* новая граница для гармонии */
+  border: 1px solid #E8DCC9;
 }
 
 .product-image img {
@@ -124,17 +124,17 @@ const removeFromWishlist = async (productId) => {
   font-size: 18px;
   margin-bottom: 8px;
   cursor: pointer;
-  color: #2C2C2C; /* был #333, стал чуть темнее для контраста */
+  color: #2C2C2C;
 }
 
 .product-info h3:hover {
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
 }
 
 .price {
   font-size: 20px;
   font-weight: bold;
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
   margin-bottom: 5px;
 }
 
@@ -158,20 +158,20 @@ const removeFromWishlist = async (productId) => {
 }
 
 .remove-btn {
-  background: #FFF3E6; /* был #fee (холодный розовый), стал тёплый персиковый */
-  color: #C67B5C; /* был #ff4444, стал терракотовый для гармонии */
+  background: #FFF3E6;
+  color: #C67B5C;
 }
 
 .remove-btn:hover {
-  background: #FFE5D4; /* был #fdd, стал чуть темнее персиковый */
+  background: #FFE5D4;
 }
 
 .cart-btn {
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
 }
 
 .cart-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D;
 }
 </style>

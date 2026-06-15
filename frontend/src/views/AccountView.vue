@@ -194,7 +194,7 @@ onMounted(() => {
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
-  border-bottom: 2px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 2px solid #E8DCC9; 
   padding-bottom: 10px;
   overflow-x: auto;
 }
@@ -210,9 +210,9 @@ onMounted(() => {
 }
 
 .tabs button.active {
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C; 
   font-weight: bold;
-  border-bottom: 3px solid #C67B5C; /* был #42b883 (зелёный) */
+  border-bottom: 3px solid #C67B5C; 
 }
 
 .tab-content {
@@ -232,7 +232,7 @@ onMounted(() => {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C; 
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -240,7 +240,7 @@ onMounted(() => {
 }
 
 .continue-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D; 
 }
 
 .orders-list {
@@ -250,10 +250,10 @@ onMounted(() => {
 }
 
 .order-card {
-  border: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9; 
   border-radius: 8px;
   padding: 20px;
-  background: #FFFBF7; /* был #fafafa (холодный серый), стал тёплый бежевый */
+  background: #FFFBF7; 
 }
 
 .order-header {
@@ -262,7 +262,7 @@ onMounted(() => {
   align-items: center;
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9; 
 }
 
 .order-number {
@@ -293,20 +293,20 @@ onMounted(() => {
   display: flex;
   justify-content: space-between;
   padding: 5px 0;
-  border-bottom: 1px dotted #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border-bottom: 1px dotted #E8DCC9; 
   font-size: 14px;
 }
 
 .item-total {
   font-weight: bold;
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C; 
 }
 
 .order-total {
   text-align: right;
   font-size: 16px;
   padding: 10px 0;
-  border-top: 2px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border-top: 2px solid #E8DCC9; 
   margin-top: 10px;
 }
 
@@ -320,7 +320,7 @@ onMounted(() => {
   align-items: center;
   gap: 15px;
   padding: 15px;
-  border: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9; 
   border-radius: 8px;
 }
 
@@ -329,7 +329,7 @@ onMounted(() => {
   height: 60px;
   border-radius: 50%;
   overflow: hidden;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -375,18 +375,18 @@ onMounted(() => {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9; 
 }
 
 .view-all {
   display: inline-block;
   margin-top: 15px;
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C; 
   text-decoration: none;
 }
 
 .view-all:hover {
-  color: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  color: #B56A4D;
 }
 
 .settings-form {
@@ -407,20 +407,20 @@ onMounted(() => {
 .form-group input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9; 
   border-radius: 4px;
   font-size: 16px;
-  background: #FFFBF7; /* был white, стал тёплый бежевый для инпутов */
+  background: #FFFBF7; 
 }
 
 .form-group input:focus {
   outline: none;
-  border-color: #C67B5C; /* акцент при фокусе */
+  border-color: #C67B5C;
 }
 
 .save-btn {
   padding: 12px 30px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C; 
   color: white;
   border: none;
   border-radius: 6px;
@@ -429,6 +429,6 @@ onMounted(() => {
 }
 
 .save-btn:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D; 
 }
 </style>

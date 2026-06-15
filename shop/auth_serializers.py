@@ -33,8 +33,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         shop_name = validated_data.pop('shop_name')
         phone = validated_data.pop('phone')
         validated_data.pop('password2')
-        
-        # Создаем пользователя
+
         user = User.objects.create_user(
             username=validated_data['username'],
             email=validated_data['email'],
@@ -44,7 +43,6 @@ class RegisterSerializer(serializers.ModelSerializer):
         user.set_password(validated_data['password'])
         user.save()
         
-        # Создаем профиль мастера
         Master.objects.create(
             user=user,
             shop_name=shop_name,

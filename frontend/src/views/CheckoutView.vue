@@ -208,7 +208,7 @@ const submitOrder = async () => {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C; 
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -216,7 +216,7 @@ const submitOrder = async () => {
 }
 
 .continue-shopping:hover {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D; 
 }
 
 .checkout-content {
@@ -252,22 +252,22 @@ const submitOrder = async () => {
 .form-group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9; 
   border-radius: 4px;
   font-size: 16px;
   font-family: inherit;
-  background: #FFFBF7; /* был white, стал тёплый бежевый */
+  background: #FFFBF7; 
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #C67B5C; /* акцент при фокусе — терракотовый */
+  border-color: #C67B5C; 
 }
 
 .form-group input.error,
 .form-group textarea.error {
-  border-color: #ff4444; /* красный для ошибок оставляем */
+  border-color: #ff4444; 
 }
 
 .error-text {
@@ -297,7 +297,7 @@ const submitOrder = async () => {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-bottom: 1px solid #E8DCC9; 
 }
 
 .item-name {
@@ -306,7 +306,7 @@ const submitOrder = async () => {
 
 .item-price {
   font-weight: 500;
-  color: #2C2C2C; /* был #2c3e50 (холодный синий), стал нейтрально-чёрный */
+  color: #2C2C2C; 
 }
 
 .total {
@@ -315,17 +315,17 @@ const submitOrder = async () => {
   padding: 20px 0;
   font-size: 18px;
   font-weight: bold;
-  border-top: 2px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+  border-top: 2px solid #E8DCC9; 
 }
 
 .total-price {
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C; 
 }
 
 .submit-btn {
   width: 100%;
   padding: 15px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C; 
   color: white;
   border: none;
   border-radius: 6px;
@@ -337,7 +337,7 @@ const submitOrder = async () => {
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D; 
 }
 
 .submit-btn:disabled {
@@ -354,6 +354,6 @@ const submitOrder = async () => {
 }
 
 .back-link:hover {
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C; 
 }
 </style>

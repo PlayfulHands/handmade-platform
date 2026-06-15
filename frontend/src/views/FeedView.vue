@@ -53,8 +53,8 @@ onMounted(async () => {
 .loading, .empty {
   text-align: center;
   padding: 60px;
-  background: #FFFBF7; /* был white, стал тёплый бежевый */
-  border: 1px solid #E8DCC9; /* новая граница для гармонии */
+  background: #FFFBF7;
+  border: 1px solid #E8DCC9;
   border-radius: 8px;
   color: #666;
 }

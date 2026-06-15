@@ -29,7 +29,6 @@ from .serializers import (
 from .models import ChatRoom, ChatMessage
 from .serializers import ChatRoomSerializer, ChatMessageSerializer
 
-# ===== СЕРИАЛИЗАТОРЫ ДЛЯ АУТЕНТИФИКАЦИИ =====
 class RegisterSerializer(serializers.Serializer):
     username = serializers.CharField()
     password = serializers.CharField(write_only=True)
@@ -64,23 +63,15 @@ class ProductViewSet(viewsets.ModelViewSet):
     ordering_fields = ['price', 'created_at', 'views_count']
     
     def get_queryset(self):
-        # Базовый queryset — все опубликованные товары
         queryset = Product.objects.filter(status='published')
         
-        # Фильтр по категории
         category_id = self.request.query_params.get('category')
         if category_id:
             queryset = queryset.filter(category_id=category_id)
         
-        # Фильтр по мастеру (если передан параметр)
         master_id = self.request.query_params.get('master')
         if master_id and master_id != 'null':
             queryset = queryset.filter(master_id=master_id)
-        
-        # Для обычных пользователей (включая мастеров на главной) 
-        # НЕ нужно ограничивать только своими товарами.
-        # Если нужно показывать мастеру все его товары (включая черновики) — 
-        # это следует делать через отдельный эндпоинт, например /api/products/my-products/
         
         return queryset
     
@@ -192,7 +183,6 @@ class MasterViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
 
-# ===== ПОСТЫ (БЛОГ) =====
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.filter(is_published=True)
     serializer_class = PostSerializer
@@ -251,10 +241,9 @@ class PostViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
 
-# ===== ПОДПИСКИ =====
 class FollowViewSet(viewsets.ModelViewSet):
     serializer_class = FollowSerializer
-    permission_classes = [IsAuthenticated]  # Убедись, что это есть
+    permission_classes = [IsAuthenticated]
     
     def get_queryset(self):
         return Follow.objects.filter(user=self.request.user)
@@ -286,7 +275,6 @@ class FollowViewSet(viewsets.ModelViewSet):
             return Response({'followed': True})
 
 
-# ===== ИЗБРАННОЕ =====
 class WishlistViewSet(viewsets.ModelViewSet):
     serializer_class = WishlistItemSerializer
     permission_classes = []
@@ -322,7 +310,6 @@ class WishlistViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
 
-# ===== ОТЗЫВЫ =====
 class ReviewViewSet(viewsets.ModelViewSet):
     serializer_class = ReviewSerializer
     permission_classes = [IsAuthenticated]
@@ -350,7 +337,6 @@ class ChatRoomViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        # Фильтруем комнаты, где пользователь является покупателем или мастером
         return ChatRoom.objects.filter(
             models.Q(customer=self.request.user) |
             models.Q(master__user=self.request.user)
@@ -398,7 +384,6 @@ class ChatRoomViewSet(viewsets.ModelViewSet):
         return Response(serializer.data, status=201)
 
 
-# ===== АУТЕНТИФИКАЦИЯ =====
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def register(request):
@@ -466,14 +451,12 @@ def logout(request):
     try:
         refresh_token = request.data.get("refresh")
         if not refresh_token:
-            # Если нет refresh токена, просто возвращаем успех (клиент уже очистил токены)
             return Response({'message': 'Выход выполнен'}, status=status.HTTP_200_OK)
         
         token = RefreshToken(refresh_token)
         token.blacklist()
         return Response({'message': 'Успешный выход'}, status=status.HTTP_200_OK)
     except Exception as e:
-        # Даже при ошибке возвращаем 200, чтобы клиент не падал
         print(f"Logout error: {e}")
         return Response({'message': 'Выход выполнен'}, status=status.HTTP_200_OK)
 

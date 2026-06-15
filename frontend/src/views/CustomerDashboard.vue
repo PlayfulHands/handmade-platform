@@ -518,7 +518,7 @@ onMounted(async () => {
     display: flex;
     gap: 10px;
     margin-bottom: 30px;
-    border-bottom: 2px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+    border-bottom: 2px solid #E8DCC9;
     padding-bottom: 10px;
     flex-wrap: wrap;
     align-items: center;
@@ -536,9 +536,9 @@ onMounted(async () => {
     gap: 8px;
 }
 .tabs button.active {
-    color: #C67B5C; /* был #42b883 (зелёный) */
+    color: #C67B5C;
     font-weight: bold;
-    border-bottom: 3px solid #C67B5C; /* был #42b883 (зелёный) */
+    border-bottom: 3px solid #C67B5C;
 }
 
 .tab-content {
@@ -558,14 +558,14 @@ onMounted(async () => {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background: #C67B5C; /* был #42b883 (зелёный) */
+    background: #C67B5C;
     color: white;
     text-decoration: none;
     border-radius: 6px;
     transition: background 0.3s;
 }
 .continue-btn:hover {
-    background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+    background: #B56A4D;
 }
 
 /* Заказы */
@@ -575,10 +575,10 @@ onMounted(async () => {
     gap: 20px;
 }
 .order-card {
-    border: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+    border: 1px solid #E8DCC9;
     border-radius: 8px;
     padding: 20px;
-    background: #FFFBF7; /* был #fafafa (холодный серый), стал тёплый бежевый */
+    background: #FFFBF7;
 }
 .order-header {
     display: flex;
@@ -586,7 +586,7 @@ onMounted(async () => {
     align-items: center;
     margin-bottom: 15px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+    border-bottom: 1px solid #E8DCC9;
 }
 .order-number {
     font-weight: bold;
@@ -610,16 +610,16 @@ onMounted(async () => {
     display: flex;
     justify-content: space-between;
     padding: 5px 0;
-    border-bottom: 1px dotted #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+    border-bottom: 1px dotted #E8DCC9;
 }
 .item-total {
     font-weight: bold;
-    color: #C67B5C; /* был #42b883 (зелёный) */
+    color: #C67B5C;
 }
 .order-total {
     text-align: right;
     padding: 10px 0;
-    border-top: 2px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+    border-top: 2px solid #E8DCC9;
     margin-top: 10px;
 }
 
@@ -633,7 +633,7 @@ onMounted(async () => {
     align-items: center;
     gap: 15px;
     padding: 15px;
-    border: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+    border: 1px solid #E8DCC9;
     border-radius: 8px;
 }
 .master-avatar {
@@ -641,7 +641,7 @@ onMounted(async () => {
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
-    background: #C67B5C; /* был #42b883 (зелёный) */
+    background: #C67B5C;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -681,13 +681,13 @@ onMounted(async () => {
     gap: 15px;
     align-items: center;
     padding: 15px;
-    border: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+    border: 1px solid #E8DCC9;
     border-radius: 8px;
 }
 .product-image {
     width: 80px;
     height: 80px;
-    background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+    background: #FFFBF7;
     border-radius: 4px;
     overflow: hidden;
     cursor: pointer;
@@ -701,11 +701,11 @@ onMounted(async () => {
     cursor: pointer;
 }
 .product-info h3:hover {
-    color: #C67B5C; /* был #42b883 (зелёный) */
+    color: #C67B5C;
 }
 .price {
     font-weight: bold;
-    color: #C67B5C; /* был #42b883 (зелёный) */
+    color: #C67B5C;
 }
 .remove-btn {
     padding: 6px 12px;
@@ -718,11 +718,11 @@ onMounted(async () => {
 .view-all {
     display: inline-block;
     margin-top: 20px;
-    color: #C67B5C; /* был #42b883 (зелёный) */
+    color: #C67B5C;
     text-decoration: none;
 }
 .view-all:hover {
-    color: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+    color: #B56A4D;
 }
 
 /* Чаты */
@@ -749,7 +749,7 @@ onMounted(async () => {
     height: 500px;
 }
 .rooms-list {
-    background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+    background: #FFFBF7; 
     border-radius: 8px;
     overflow-y: auto;
 }
@@ -759,17 +759,17 @@ onMounted(async () => {
     gap: 12px;
     padding: 12px;
     cursor: pointer;
-    border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+    border-bottom: 1px solid #E8DCC9; 
     position: relative;
 }
 .room-item.active {
-    background: #FFF3E6; /* был #e8f5e9 (зеленоватый), стал тёплый персиковый */
+    background: #FFF3E6; 
 }
 .room-avatar {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: #C67B5C; /* был #42b883 (зелёный) */
+    background: #C67B5C; 
     color: white;
     display: flex;
     align-items: center;
@@ -812,8 +812,8 @@ onMounted(async () => {
 }
 .chat-header {
     padding: 12px;
-    border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
-    background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+    border-bottom: 1px solid #E8DCC9; 
+    background: #FFFBF7; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -848,7 +848,7 @@ onMounted(async () => {
     align-self: flex-start;
 }
 .message.outgoing {
-    background: #C67B5C; /* был #42b883 (зелёный) */
+    background: #C67B5C;
     color: white;
     align-self: flex-end;
 }
@@ -861,28 +861,28 @@ onMounted(async () => {
     display: flex;
     gap: 8px;
     padding: 12px;
-    border-top: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+    border-top: 1px solid #E8DCC9;
 }
 .chat-input input {
     flex: 1;
     padding: 8px;
-    border: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+    border: 1px solid #E8DCC9; 
     border-radius: 20px;
-    background: #FFFBF7; /* был white, стал тёплый бежевый */
+    background: #FFFBF7; 
 }
 .chat-input input:focus {
     outline: none;
     border-color: #C67B5C;
 }
 .chat-input button {
-    background: #C67B5C; /* был #42b883 (зелёный) */
+    background: #C67B5C;
     border: none;
     border-radius: 50%;
     width: 36px;
     cursor: pointer;
 }
 .chat-input button:hover {
-    background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+    background: #B56A4D; 
 }
 .chat-placeholder {
     display: flex;
@@ -897,7 +897,7 @@ onMounted(async () => {
 .settings-section {
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+    border-bottom: 1px solid #E8DCC9;
 }
 .settings-section h3 {
     margin-bottom: 15px;
@@ -917,9 +917,9 @@ onMounted(async () => {
     width: 100%;
     max-width: 400px;
     padding: 8px 12px;
-    border: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+    border: 1px solid #E8DCC9;
     border-radius: 6px;
-    background: #FFFBF7; /* был white, стал тёплый бежевый */
+    background: #FFFBF7; 
 }
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus {
@@ -936,7 +936,7 @@ onMounted(async () => {
     cursor: pointer;
 }
 .save-btn {
-    background: #C67B5C; /* был #42b883 (зелёный) */
+    background: #C67B5C;
     color: white;
     border: none;
     padding: 8px 20px;
@@ -946,13 +946,13 @@ onMounted(async () => {
     transition: background 0.3s;
 }
 .save-btn:hover:not(:disabled) {
-    background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+    background: #B56A4D;
 }
 .save-btn:disabled {
     opacity: 0.5;
 }
 .add-address-btn {
-    background: #C67B5C; /* был #42b883 (зелёный) */
+    background: #C67B5C;
     color: white;
     border: none;
     padding: 6px 12px;
@@ -962,7 +962,7 @@ onMounted(async () => {
     transition: background 0.3s;
 }
 .add-address-btn:hover {
-    background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+    background: #B56A4D;
 }
 .addresses-list {
     display: flex;
@@ -973,10 +973,10 @@ onMounted(async () => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #FFFBF7; /* был #f9f9f9 (холодный), стал тёплый бежевый */
+    background: #FFFBF7; 
     padding: 12px;
     border-radius: 8px;
-    border: 1px solid #E8DCC9; /* был #eee (серый), стал тёплый бежевый */
+    border: 1px solid #E8DCC9; 
 }
 .address-info {
     flex: 1;

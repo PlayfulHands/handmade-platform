@@ -91,7 +91,7 @@ const login = async () => {
 .login-card h1 {
   margin-bottom: 30px;
   text-align: center;
-  color: #2C2C2C; /* был #2c3e50 (холодный синий), стал нейтрально-чёрный */
+  color: #2C2C2C;
 }
 
 .form-group {
@@ -108,22 +108,22 @@ const login = async () => {
 .form-group input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #E8DCC9; /* был #ddd (серый), стал тёплый бежевый */
+  border: 1px solid #E8DCC9;
   border-radius: 4px;
   font-size: 16px;
-  background: #FFFBF7; /* был white, стал тёплый бежевый */
+  background: #FFFBF7;
   transition: border-color 0.3s;
 }
 
 .form-group input:focus {
   outline: none;
-  border-color: #C67B5C; /* акцент при фокусе — терракотовый */
+  border-color: #C67B5C;
 }
 
 .login-btn {
   width: 100%;
   padding: 12px;
-  background: #C67B5C; /* был #42b883 (зелёный) */
+  background: #C67B5C;
   color: white;
   border: none;
   border-radius: 6px;
@@ -133,7 +133,7 @@ const login = async () => {
 }
 
 .login-btn:hover:not(:disabled) {
-  background: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  background: #B56A4D;
 }
 
 .login-btn:disabled {
@@ -155,13 +155,13 @@ const login = async () => {
 }
 
 .register-link a {
-  color: #C67B5C; /* был #42b883 (зелёный) */
+  color: #C67B5C;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .register-link a:hover {
-  color: #B56A4D; /* был #33a06f (тёмно-зелёный) */
+  color: #B56A4D;
   text-decoration: underline;
 }
 </style>
